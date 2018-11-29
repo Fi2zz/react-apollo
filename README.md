@@ -2,6 +2,9 @@
 
 a react apollo demo
 
+the docs:
+<a href="https://www.apollographql.com/">Apollo GraphQL</a>
+
 ### Install
 
 ```bash
