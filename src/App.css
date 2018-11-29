@@ -1,0 +1,139 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #282c34;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-direction: column;
+}
+
+.user-list,
+.user-form {
+  display: block;
+  width: 480px;
+}
+
+.user-form input[type="submit"],
+.user-form input[type="text"],
+.user-form input[type="number"] {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.user-form input[type="submit"] {
+  height: 36px;
+  -webkit-appearance: none;
+}
+
+.user-form .group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-form .group label {
+  color: #fff;
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.user-list {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.user-list ol {
+  margin: 0;
+  padding: 0;
+}
+
+.user-list h2 {
+  color: #282c34;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+.no-users {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.user-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.user-item:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+.user-item .bio {
+  border-bottom: 1px #ccc solid;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.user-item .name {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-item .join,
+.user-item .profile {
+  color: #999;
+  font-size: 12px;
+  padding: 6px 0;
+}
+
+.user-item .id {
+  font-size: 12px;
+  background-color: #282c34;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 8px;
+  padding: 1px 3px;
+}
+
+.user-item .avatar {
+  width: 64px;
+  height: 64px;
+  background-color: #282c34;
+  border-radius: 50%;
+  flex-basis: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 20px;
+  /*flex-grow: 84px;*/
+}
+
+.user-item .join {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
